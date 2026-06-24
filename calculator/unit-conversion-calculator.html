@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Conversion Calculator - Free Online Converter</title>
+    <meta name="description" content="Convert common units like length, weight, and temperature quickly and accurately." >
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">Calc<span>Tools</span></a></div>
+            <nav>
+                <div class="menu-toggle">☰</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="emi-calculator.html">EMI</a></li>
+                    <li><a href="gst-calculator.html">GST</a></li>
+                    <li><a href="age-calculator.html">Age</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="text-align:center; margin-bottom:30px;">
+            <h1>Unit Conversion Calculator</h1>
+            <p>Quickly convert length, weight, and temperature.</p>
+        </section>
+
+        <section class="calculator-container">
+            <div class="calculator-box">
+                <form id="unit-form">
+                    <div class="input-group">
+                        <label for="category">Category</label>
+                        <select id="category">
+                            <option value="length" selected>Length</option>
+                            <option value="weight">Weight</option>
+                            <option value="temperature">Temperature</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="from-unit">From</label>
+                        <select id="from-unit"></select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="to-unit">To</label>
+                        <select id="to-unit"></select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="unit-value">Value</label>
+                        <input type="number" id="unit-value" step="any" placeholder="e.g. 10" required>
+                    </div>
+
+                    <button type="submit" class="btn">Convert</button>
+                </form>
+
+                <div id="unit-result" class="result-box"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>CalcTools</h4>
+                <p>Reliable and free online calculators for everyone. Built for speed and accuracy.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: support428@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 CalcTools. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

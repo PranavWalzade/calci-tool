@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator India - Free Home & Car Loan EMI Tool</title>
+    <meta name="description" content="Use our free EMI calculator to calculate your monthly home loan, car loan, or personal loan EMIs accurately. Instant results with interest breakdown.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">Calc<span>Tools</span></a></div>
+            <nav>
+                <div class="menu-toggle">☰</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="emi-calculator.html">EMI</a></li>
+                    <li><a href="gst-calculator.html">GST</a></li>
+                    <li><a href="age-calculator.html">Age</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+
+        <section class="calculator-container">
+            <h1 style="text-align: center; margin-bottom: 30px;">EMI Calculator</h1>
+            <div class="calculator-box">
+                <form id="emi-form">
+                    <div class="input-group">
+                        <label for="loan-amount">Loan Amount (₹)</label>
+                        <input type="number" id="loan-amount" placeholder="e.g. 500000" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="interest-rate">Interest Rate (%)</label>
+                        <input type="number" step="0.1" id="interest-rate" placeholder="e.g. 8.5" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="loan-tenure">Loan Tenure (Years)</label>
+                        <input type="number" id="loan-tenure" placeholder="e.g. 5" required>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Calculate EMI</button>
+                </form>
+
+                <div id="emi-result" class="result-box"></div>
+            </div>
+        </section>
+
+
+        <section class="seo-content">
+            <h2>Understanding EMI and How It's Calculated</h2>
+            <p>Equated Monthly Installment (EMI) is the fixed amount you pay back to a lender every month until your loan is fully paid off. It consists of two parts: the principal amount and the interest charged on the loan.</p>
+            <p>Our <strong>EMI Calculator India</strong> helps you plan your finances by giving you a clear picture of your monthly commitments. Whether you are looking for a home loan, car loan, or a personal loan, knowing your EMI in advance is crucial for budgeting. The formula used for calculation is [P x R x (1+R)^N]/[(1+R)^N-1], where P is the principal, R is the monthly interest rate, and N is the number of monthly installments.</p>
+            <p>Using this free tool, you can experiment with different interest rates and tenures to find a loan plan that fits your pocket. We recommend keeping your total EMIs below 40-50% of your monthly income for financial stability.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>CalcTools</h4>
+                <p>Reliable and free online calculators for everyone. Built for speed and accuracy.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: support428@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 CalcTools. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

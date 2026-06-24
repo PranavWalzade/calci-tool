@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter - Free Online Converter</title>
+    <meta name="description" content="Convert currencies using a manual exchange rate. Fast and simple." >
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">Calc<span>Tools</span></a></div>
+            <nav>
+                <div class="menu-toggle">☰</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="emi-calculator.html">EMI</a></li>
+                    <li><a href="gst-calculator.html">GST</a></li>
+                    <li><a href="age-calculator.html">Age</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="text-align:center; margin-bottom:30px;">
+            <h1>Currency Converter</h1>
+            <p>Convert currencies using your own exchange rate input.</p>
+        </section>
+
+        <section class="calculator-container">
+            <div class="calculator-box">
+                <form id="currency-form">
+                    <div class="input-group">
+                        <label for="from-currency">From Currency</label>
+                        <input type="text" id="from-currency" value="INR" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="to-currency">To Currency</label>
+                        <input type="text" id="to-currency" value="USD" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="currency-amount">Amount (From)</label>
+                        <input type="number" id="currency-amount" step="any" placeholder="e.g. 1000" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="rate">Exchange Rate</label>
+                        <p style="font-size:0.9rem; color:#555; margin-top: -6px; margin-bottom: 10px;">
+                            Enter how many <strong>To Currency</strong> for 1 unit of <strong>From Currency</strong>.
+                            Example: if 1 INR = 0.012 USD, then rate = 0.012
+                        </p>
+                        <input type="number" id="rate" step="any" min="0" placeholder="e.g. 0.012" required>
+                    </div>
+
+                    <button type="submit" class="btn">Convert</button>
+                </form>
+
+                <div id="currency-result" class="result-box"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>CalcTools</h4>
+                <p>Reliable and free online calculators for everyone. Built for speed and accuracy.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: support428@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 CalcTools. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

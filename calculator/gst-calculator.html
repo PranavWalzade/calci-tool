@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Calculator India - Online GST Inclusive & Exclusive Tool</title>
+    <meta name="description" content="Calculate GST (Goods and Services Tax) easily with our free online tool. Support for 5%, 12%, 18%, and 28% GST rates in India.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">Calc<span>Tools</span></a></div>
+            <nav>
+                <div class="menu-toggle">☰</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="emi-calculator.html">EMI</a></li>
+                    <li><a href="gst-calculator.html">GST</a></li>
+                    <li><a href="age-calculator.html">Age</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+
+        <section class="calculator-container">
+            <h1 style="text-align: center; margin-bottom: 30px;">GST Calculator</h1>
+            <div class="calculator-box">
+                <form id="gst-form">
+                    <div class="input-group">
+                        <label for="amount">Total Amount (₹)</label>
+                        <input type="number" id="amount" placeholder="e.g. 1000" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="gst-rate">GST Rate (%)</label>
+                        <select id="gst-rate">
+                            <option value="5">5%</option>
+                            <option value="12">12%</option>
+                            <option value="18" selected>18%</option>
+                            <option value="28">28%</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="gst-type">Calculation Type</label>
+                        <select id="gst-type">
+                            <option value="exclusive">GST Exclusive (Add GST)</option>
+                            <option value="inclusive">GST Inclusive (Remove GST)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Calculate GST</button>
+                </form>
+
+                <div id="gst-result" class="result-box"></div>
+            </div>
+        </section>
+
+
+
+        <section class="seo-content">
+            <h2>How to Use the Online GST Calculator</h2>
+            <p>The Goods and Services Tax (GST) is an indirect tax used in India on the supply of goods and services. Our <strong>GST Calculator India</strong> is designed to simplify tax calculations for business owners, accountants, and consumers.</p>
+            <p>There are two ways to calculate GST:
+                <ul>
+                    <li><strong>GST Exclusive:</strong> When you have the cost of a product and you want to add the tax on top of it. Formula: GST Amount = (Original Cost * GST%) / 100.</li>
+                    <li><strong>GST Inclusive:</strong> When the price already includes the tax and you want to find the original value and the tax component. Formula: GST Amount = Total Price - (Total Price * (100 / (100 + GST%))).</li>
+                </ul>
+            </p>
+            <p>Our tool supports all standard Indian GST slabs, including 5%, 12%, 18%, and 28%. Accurate tax calculation is essential for filing GST returns and maintaining proper business records. Use this tool for quick and error-free results.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>CalcTools</h4>
+                <p>Reliable and free online calculators for everyone. Built for speed and accuracy.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: support428@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 CalcTools. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

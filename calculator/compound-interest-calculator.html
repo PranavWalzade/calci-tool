@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest Calculator - Free Online CI Tool India</title>
+    <meta name="description" content="Calculate compound interest and see your wealth grow. Accurate CI calculator with options for monthly, quarterly, and annual compounding.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">Calc<span>Tools</span></a></div>
+            <nav>
+                <div class="menu-toggle">☰</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="emi-calculator.html">EMI</a></li>
+                    <li><a href="gst-calculator.html">GST</a></li>
+                    <li><a href="age-calculator.html">Age</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="calculator-container">
+            <h1 style="text-align: center; margin-bottom: 30px;">Compound Interest Calculator</h1>
+            <div class="calculator-box">
+                <form id="ci-form">
+                    <div class="input-group">
+                        <label for="principal-ci">Principal Amount (₹)</label>
+                        <input type="number" id="principal-ci" placeholder="e.g. 10000" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="rate-ci">Annual Interest Rate (%)</label>
+                        <input type="number" step="0.1" id="rate-ci" placeholder="e.g. 7" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="time-ci">Time Period (Years)</label>
+                        <input type="number" step="0.1" id="time-ci" placeholder="e.g. 10" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="compound-freq">Compounding Frequency</label>
+                        <select id="compound-freq">
+                            <option value="1">Annually</option>
+                            <option value="2">Half-Yearly</option>
+                            <option value="4">Quarterly</option>
+                            <option value="12">Monthly</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Calculate CI</button>
+                </form>
+
+                <div id="ci-result" class="result-box"></div>
+            </div>
+        </section>
+
+        <section class="seo-content">
+            <h2>The Power of Compounding Explained</h2>
+            <p>Compound interest is the addition of interest to the principal sum of a loan or deposit, or in other words, interest on interest. It is the result of reinvesting interest, rather than paying it out, so that interest in the next period is then earned on the principal sum plus previously accumulated interest.</p>
+            <p>Our <strong>Compound Interest Calculator India</strong> uses the standard formula: A = P(1 + r/n)^(nt), where:
+                <ul>
+                    <li><strong>A</strong> is the total amount including interest.</li>
+                    <li><strong>P</strong> is the principal amount.</li>
+                    <li><strong>r</strong> is the annual interest rate (decimal).</li>
+                    <li><strong>n</strong> is the number of times interest is compounded per year.</li>
+                    <li><strong>t</strong> is the time the money is invested for.</li>
+                </ul>
+            </p>
+            <p>Compounding can have a dramatic effect on the growth of an investment over time. Even small, regular contributions can grow into significant sums due to the power of compounding. Use this tool to plan your long-term financial goals, such as retirement or a child's education fund.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>CalcTools</h4>
+                <p>Reliable and free online calculators for everyone. Built for speed and accuracy.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: support428@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 CalcTools. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

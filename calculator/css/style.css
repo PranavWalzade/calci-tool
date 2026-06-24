@@ -1,0 +1,336 @@
+:root {
+    --primary-color: #27ae60;
+    --secondary-color: #2c3e50;
+    --bg-color: #f4f7f6;
+    --text-color: #333;
+    --light-grey: #e0e0e0;
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 16px; /* Ensure base font size is mobile-friendly */
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 0.8rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+.nav-container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 5px;
+    transition: color 0.3s;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 5px;
+    user-select: none;
+}
+
+/* Main Content */
+main {
+    width: 92%;
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    min-height: 70vh;
+}
+
+
+
+/* Calculator Card Styling (for Index) */
+.calc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 15px;
+}
+
+.calc-card {
+    background: var(--white);
+    padding: 25px 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calc-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.calc-card h3 {
+    margin-bottom: 12px;
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+}
+
+.calc-card p {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 14px 24px; /* Larger touch target */
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #219150;
+}
+
+/* Form Styling (for Calculator Pages) */
+.calculator-box {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 14px; /* Larger touch target */
+    border: 1px solid var(--light-grey);
+    border-radius: 8px;
+    font-size: 1rem; /* Prevents auto-zoom on iOS */
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus, .input-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.result-box {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #f1fbf4;
+    border-left: 6px solid var(--primary-color);
+    border-radius: 4px;
+    display: none;
+}
+
+.result-box h3 {
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.result-box p {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+.seo-content {
+    margin-top: 40px;
+    padding: 0 5px;
+}
+
+.seo-content h1, .seo-content h2 {
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+
+.seo-content p {
+    margin-bottom: 18px;
+    font-size: 1rem;
+    color: #444;
+}
+
+.seo-content ul {
+    margin-bottom: 18px;
+    padding-left: 20px;
+}
+
+.seo-content ul li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 3rem 0 1rem;
+    margin-top: 60px;
+}
+
+.footer-container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.footer-section h4 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 25px 0;
+    border-top: 1px solid #3e4f5f;
+    margin-top: 40px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        background-color: var(--secondary-color);
+        padding: 15px 4%;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        border-bottom: 1px solid #3e4f5f;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    nav ul li a {
+        padding: 15px 0;
+        font-size: 1.1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .calculator-box {
+        padding: 20px;
+    }
+}

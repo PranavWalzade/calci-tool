@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator - Calculate SI Online Instantly</title>
+    <meta name="description" content="Calculate simple interest and the total amount on your principal with our free SI calculator. Easy to use for loans and savings.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">Calc<span>Tools</span></a></div>
+            <nav>
+                <div class="menu-toggle">☰</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="emi-calculator.html">EMI</a></li>
+                    <li><a href="gst-calculator.html">GST</a></li>
+                    <li><a href="age-calculator.html">Age</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="ad-slot">
+            <p>Advertisement Space (Top)</p>
+        </section>
+
+        <section class="calculator-container">
+            <h1 style="text-align: center; margin-bottom: 30px;">Simple Interest Calculator</h1>
+            <div class="calculator-box">
+                <form id="si-form">
+                    <div class="input-group">
+                        <label for="principal">Principal Amount (₹)</label>
+                        <input type="number" id="principal" placeholder="e.g. 10000" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="rate">Annual Interest Rate (%)</label>
+                        <input type="number" step="0.1" id="rate" placeholder="e.g. 5" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="time">Time Period (Years)</label>
+                        <input type="number" step="0.1" id="time" placeholder="e.g. 2" required>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Calculate SI</button>
+                </form>
+
+                <div id="si-result" class="result-box"></div>
+            </div>
+        </section>
+
+        <section class="ad-slot">
+            <p>Advertisement Space (Middle)</p>
+        </section>
+
+        <section class="seo-content">
+            <h2>What is Simple Interest and How to Calculate It?</h2>
+            <p>Simple interest is a quick and easy method of calculating the interest charge on a loan or investment. It is determined by multiplying the daily interest rate by the principal by the number of days that elapse between payments.</p>
+            <p>The formula for <strong>Simple Interest</strong> is: SI = (P × R × T) / 100, where:
+                <ul>
+                    <li><strong>P</strong> is the Principal Amount.</li>
+                    <li><strong>R</strong> is the Annual Rate of Interest.</li>
+                    <li><strong>T</strong> is the Time Period in years.</li>
+                </ul>
+            </p>
+            <p>Simple interest is commonly used for short-term loans, automobile loans, and certain types of savings accounts. Unlike compound interest, simple interest is calculated only on the principal amount. Our tool helps you instantly find the total interest and the final amount you will receive or pay at the end of the tenure.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>CalcTools</h4>
+                <p>Reliable and free online calculators for everyone. Built for speed and accuracy.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: support428@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 CalcTools. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
