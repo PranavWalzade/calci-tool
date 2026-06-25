@@ -22,5 +22,5 @@ A simple calculator website built using HTML, CSS, and JavaScript.
 - JavaScript
 
 ## Live Link
-https://pranavwalzade.github.io/calci-tool/
+https://calci-tools.netlify.app/
 
